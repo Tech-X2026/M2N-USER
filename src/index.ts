@@ -38,7 +38,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/bookings', bookingRoutes);
 
 // Serve static frontend files from 'public' folder
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../client-dist')));
 
 // Catch-all route to serve index.html for client-side routing
 app.get('*', (req, res) => {
